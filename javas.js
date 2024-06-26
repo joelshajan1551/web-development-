@@ -1,18 +1,5 @@
-function person(name, age, place) {
-  this.name = name;
-  this.age = age;
-  this.place = place;
-  this.display = function () {
-    console.log("name: " + this.name + " age: " + this.age);
-  };
+function hello(num1 = 1, num2) {
+  console.log(num1 + num2);
 }
 
-var joel = new person("joel", 17, "adi");
-var bol = new person("boll", 57, "idi");
-
-joel.display();
-bol.display();
-
-var d = new Date("10 december 2023");
-
-console.log(d.getMonth());
+hello(undefined, 5);
